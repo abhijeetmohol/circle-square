@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			circle-task
+		</title>
+		<link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/design-creativity-round/128/22-512.png">
+		<style>
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			body{
+				background-color:#d6dbdf;
+			}
+			.main-squre{
+				width:498px;
+				height:498px;
+				border:1px solid black;
+				background-color:#28b463;
+				position:relative;
+				margin:130px auto 0px;
+			
+			}
+			.main-squre::before{
+				content:" ";
+				background-color:#f9e79f;
+				border:1px solid black;
+				width:248px;
+				height:248px;
+				border-radius: 100%;
+				position: absolute;
+				top:0px;	
+				left:0px;	
+				transform:translate(-50%, -50%);
+				z-index:-9;	
+			}
+			.main-squre::after{
+				content:"";
+				background-color:#f9e79f;
+				width:248px;
+				height:248px;
+				bottom:0px;	
+				right:0px;
+				transform:translate(50%, 50%);
+				border:1px solid black;
+				border-radius: 100%;
+				position: absolute;	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-squre">
+		<div>
+	</body>
+</html>
